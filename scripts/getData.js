@@ -1,5 +1,5 @@
 export const getData = () => {
-	return fetch('photo.json')
+	return fetch('data.json')
 		.then((data) => {
 			return data.json()
 		})

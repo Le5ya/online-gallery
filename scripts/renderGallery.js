@@ -8,6 +8,7 @@ export const renderGallery = (wrapper, photos) => {
 		className: 'grid'
 	});
 	const endElem = createElem('div');
+
 	wrapper.append(gallery);
 
 	const grid = new Masonry(gallery, {
@@ -18,7 +19,7 @@ export const renderGallery = (wrapper, photos) => {
 	})
 	const cards = photos.map(createCardPhoto);
 	Promise.all(cards)
-		.then(cards => {
+		.then((cards) => {
 			gallery.append(...cards);
 			grid.appended(cards);
 			wrapper.append(endElem);

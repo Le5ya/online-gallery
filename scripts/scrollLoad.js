@@ -12,6 +12,7 @@ export const scrollLoad = (gallery, grid, endElement) => {
 				Promise.all(cards).then(cards => {
 					gallery.append(...cards);
 					grid.appended(cards);
+
 				});
 			}
 		},

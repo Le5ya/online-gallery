@@ -1,5 +1,5 @@
 export const renderPhoto = (photoWrapper, photo) => {
-	console.log(photo);
+	console.log('photo:', photo);
 }
 
 /*
